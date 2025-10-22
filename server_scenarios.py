@@ -36,7 +36,7 @@ def get_scenario(user_question: str) -> str:
         return 'I am just a bot, but I am here to help you! How can I assist you?'
     
     elif 'what is your name' in lowered or 'who are you' in lowered:
-        return 'I am your friendly Discord bot. How can I assist you today?'
+        return 'I am your friendly We Go Pass. How can I assist you today?'
     
     elif 'help' in lowered:
         return 'Sure! How can I help you? You can ask me about commands or any other questions you might have.'
