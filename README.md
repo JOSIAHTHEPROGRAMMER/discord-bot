@@ -38,7 +38,7 @@ A friendly Discord bot that can chat, tell jokes, play simple games, use AI, and
 
 ```bash
 git clone https://github.com/JOSIAHTHEPROGRAMMER/discord-bot.git
-cd wgp-discord-bot
+cd discord-bot
 ```
 
 ### 2. Install dependencies:
