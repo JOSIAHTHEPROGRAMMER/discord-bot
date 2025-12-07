@@ -1,21 +1,36 @@
 # WGP Discord Bot
 
-A friendly Discord bot that can chat, tell jokes, play simple games, and respond to user commands.
+A friendly Discord bot that can chat, tell jokes, play simple games, use AI, and respond to user commands.
 
-## Features
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
+![Discord.py](https://img.shields.io/badge/discord.py-Latest-blue?logo=discord)
+![Groq](https://img.shields.io/badge/Powered_by-Groq_AI-orange?logo=groq&logoColor=white)
+![Gemini](https://img.shields.io/badge/Google-Gemini-blue?logo=google&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active_Development-brightgreen)
+![PRs](https://img.shields.io/badge/PRs-Welcome-orange)
+
+---
+
+## ✨ Features
 
 - Responds to greetings and common questions.
-- Provides random jokes from [JokeAPI](https://v2.jokeapi.dev/).
-- Plays mini-games like dice rolls, coin flips, and guessing numbers.
-- Handles simple conversational scenarios.
-- Can be extended with more commands and features in the future.
+- Provides random jokes from JokeAPI.
+- AI-powered responses using the `?wgp ai <prompt>` command.
+- Mini-games:
+  - Dice roll 🎲
+  - Coin flip 🪙
+  - Number guessing 🔢
+- Custom rule-based scenarios via `server_scenarios.py`.
+- Fully extendable and easy to customize.
 
 ## Requirements
 
-- Python >= 3.11
-- `discord.py` library
-- `requests` library
-- `python-dotenv` library
+- discord.py
+- python-dotenv
+- requests
+- groq
+- google-genai
+
 
 ## Installation
 
@@ -36,6 +51,9 @@ pip install -r requirements.txt
 
 ```ini
 DISCORD_TOKEN=your_bot_token_here
+GROQ_API_KEY=your_groq_api_key
+GEMINI_API_KEY=your_gemini_api_key
+OPENWEATHER_API_KEY=your_openweather_api_key
 ```
 
 ### 4. Usage
@@ -43,7 +61,7 @@ DISCORD_TOKEN=your_bot_token_here
 #### Run the bot locally with:
 
 ```bash
-python bot.py
+python main.py
 ```
 
 #### The bot will respond to messages starting with the command prefix:
